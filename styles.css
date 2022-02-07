@@ -1,0 +1,88 @@
+@font-face{
+    font-family: 'Radiance';
+    src: url('fonts/radiance.woff') format('woff2'),
+        url('fonts/radiance.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+}
+
+* {
+	font-family: 'Radiance', "Microsoft Yahei", "STHeiti", system, sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+
+header{
+    font-family: 'Radiance';
+    height: 65px;
+    background-color: rgb(48, 46, 46);
+    box-shadow: 0px 2px 10px #000000;
+    width: 100%;
+    position: fixed;
+
+}
+
+.header-content{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.header-content span{
+    color: grey;
+    font-size: 14px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.header-content a{
+    font-size: 14px;
+    font-weight: lighter;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    margin-right: 10px;
+    margin-left: 10px;
+
+}
+
+.rightheader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.langsing a{
+    font-size: 10px;
+    color: grey;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.langsing span{
+    color: white;
+}
+
+.ftp{
+    border-width:1px;
+    border-style: solid;
+    border-color:rgb(61, 117, 172);
+    border-radius: 4px;
+    padding: 8px 40px;
+    box-shadow: 2px 2px 2px rgb(29, 28, 28);
+    background-color: rgb(36, 42, 56);
+    text-shadow: 1px 1px 2px black;
+}
+
+
+
+
+
+
+
+
