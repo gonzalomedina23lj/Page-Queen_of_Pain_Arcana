@@ -6,6 +6,12 @@
     font-weight: normal;
 }
 
+body{
+    height: 100%;
+    width: 100%;
+
+}
+
 * {
 	font-family: 'Radiance', "Microsoft Yahei", "STHeiti", system, sans-serif;
     box-sizing: border-box;
@@ -18,6 +24,8 @@
 }
 
 
+
+
 header{
     font-family: 'Radiance';
     height: 65px;
@@ -25,7 +33,7 @@ header{
     box-shadow: 0px 2px 10px #000000;
     width: 100%;
     position: fixed;
-    z-index: 4;
+    z-index: 8;
 }
 
 .header-content{
@@ -108,6 +116,7 @@ header{
     object-position: top;
     flex: 1;
     object-fit: contain;
+    position: fixed;
 }
 
 .arcanetittle{
@@ -251,6 +260,76 @@ header{
 }
 
 .container-attacks{
+    height: 2400px;
     width: 100%;
-    height: 100%;
+    background-image: url(images/bg-base.jpg);
+    background-color: black;
+    background-size: 1800px;
+    position: relative;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display:flex;
+    flex-direction:column;
+    align-items:stretch;
+}
+
+.containertext{
+    width: 40%;
+    margin: 0.5rem 2%;
+    box-shadow: 2px 2px 2px rgb(29, 28, 28);
+    background-color: #000000aa;
+    padding: 30px;
+    border-top: 2px solid red;
+}
+
+.loretext{
+    font-size: 22px;
+    color: white;
+    line-height: 32px;
+    text-shadow: 2px 2px 2px rgb(29, 28, 28);
+    position: relative;
+    
+}
+
+.subtitulo{
+    color: white;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 10px #b6b2b2;
+    text-align: left;
+    
+}
+
+.containervideo{
+    height: 800px;
+    width: 80%;
+}
+
+.videoframe{
+    position: absolute;
+    top: 602px;
+    right: 152px;
+    width: 98%;
+}
+
+.attackvideo{
+    width: 75%;
+    top: 602px;
+    right: 280px;
+    border-image: url(images/vid_frame.png);
+    position:absolute;
+    
+}
+
+.attackimage{
+    
+    left: 10px;
+
+}
+
+.containertext-2{
+
 }
