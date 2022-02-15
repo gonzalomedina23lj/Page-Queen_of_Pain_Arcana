@@ -33,7 +33,7 @@ header{
     box-shadow: 0px 2px 10px #000000;
     width: 100%;
     position: fixed;
-    z-index: 8;
+    z-index: 40;
 }
 
 .header-content{
@@ -96,27 +96,27 @@ header{
 .container-avance{
     width: 100%;
     height: 95vh;
-    margin: auto;
     padding: 60px 0;
     background-color: black;
     display: flex;
+    justify-content: center;
 }
 
 .videoconfig{
-    width: 80%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     display: flex;
-    position:relative;
+    justify-content: center;
+    position: relative;
     
 }
 
 .qopvideo{
-    width: 60%;
-    height: 100%;
+    width: 100%;
+    height: 90%;
     object-position: top;
-    flex: 1;
     object-fit: contain;
-    position: fixed;
+   
 }
 
 .arcanetittle{
@@ -275,7 +275,7 @@ header{
 
 .containertext{
     width: 40%;
-    margin: 0.5rem 2%;
+    margin: 5.5rem 2%;
     box-shadow: 2px 2px 2px rgb(29, 28, 28);
     background-color: #000000aa;
     padding: 30px;
@@ -304,8 +304,9 @@ header{
 }
 
 .containervideo{
-    height: 800px;
+    height: 700px;
     width: 80%;
+    
 }
 
 .videoframe{
@@ -313,23 +314,261 @@ header{
     top: 602px;
     right: 152px;
     width: 98%;
+    z-index: 2;
+    
 }
 
 .attackvideo{
     width: 75%;
     top: 602px;
     right: 280px;
-    border-image: url(images/vid_frame.png);
     position:absolute;
+    z-index: 2;
     
 }
 
+.container-attacks2{
+    width: 100%;
+    position: relative;
+
+}
+
 .attackimage{
-    
-    left: 10px;
+    height: 60%;
+    width: 60%;
+    object-fit: contain;
+    position: absolute;
+    right: 220px;
+    top: 180px;
 
 }
 
 .containertext-2{
+    position: relative;
+    width: 40%;
+    margin: 10.5rem 8%;
+    box-shadow: 2px 2px 2px rgb(29, 28, 28);
+    background-color: #000000aa;
+    padding: 30px;
+    border-top: 2px solid red;
+    float: left;
+    z-index: 2;
+    
+}
+
+.containertext-3{
+    position: relative;
+    width: 40%;
+    margin: 8.5rem 10%;
+    box-shadow: 2px 2px 2px rgb(29, 28, 28);
+    background-color: #000000aa;
+    padding: 30px;
+    border-top: 2px solid rgb(84, 115, 201);
+    float: right;
+    z-index: 2;
+    margin-top: 120px;
+}
+
+.subtitulo2{
+    color: rgb(84, 115, 201);
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.loretext-2{
+    font-size: 18px;
+    color: grey;
+    line-height: 32px;
+    text-shadow: 2px 2px 2px rgb(29, 28, 28);
+    font-weight: lighter;
+    position: relative;
+    margin-top: 5px;
 
 }
+
+.attackstyle{
+    height: 60%;
+    width: 60%;
+    object-fit: contain;
+    position: absolute;
+    left: -220px;
+    bottom: -180px;
+}
+
+.containertext-3 span{
+    font-size: 18px;
+    color: white;
+    line-height: 32px;
+    text-shadow: 2px 2px 2px rgb(29, 28, 28);
+    font-weight: lighter;
+    position: relative;
+    font-style: italic;
+    margin-top: 5px;
+
+}
+
+.container-arcanecontent{
+    width: 100%;
+    height: 130vh;
+    background-color: #000000;
+    position: relative;
+
+}
+
+.container-arcanecontent2{
+    width: 80%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.container-info{
+    flex: 1;
+    position: relative;
+    padding-top: 85px;
+    min-width: 440px;
+    margin-right: 80px;
+}
+
+.fixloopvideo{
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+}
+
+.fixloopvideo video{
+    
+    margin-right: -35%;
+    position: absolute;
+}
+
+.subtitulo-3{
+    color: white;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 10px #db9c3d;
+    text-align: left;
+}
+
+.loretext-3{
+    font-size: 18px;
+    color: white;
+    line-height: 32px;
+    text-shadow: 0.2px 0.2px 0.2px #db9c3d;
+    font-weight: lighter;
+    position: relative;
+    margin-top: 5px;
+}
+
+.loretext-3 span{
+    font-size: 18px;
+    color: white;
+    line-height: 32px;
+    text-shadow: 2px 2px 2px rgb(29, 28, 28);
+    font-weight: lighter;
+    position: relative;
+    font-style: italic;
+    margin-top: 5px;
+
+}
+
+.images-info{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.images-info img{
+    object-fit: contain;
+    width: 10%;
+    height:10%;
+    margin: 10px 4px;
+
+}
+
+.playarcanecontent img{
+    filter:grayscale(1);
+    object-fit: contain;
+    width: 4%;
+    height: 4%;
+    margin-right: 10px;
+    margin-top: 2px;
+}
+
+.arcaneinfo{
+    margin-top: 15px;
+    margin-right: 60px;
+}
+
+.container-lore{
+    width: 100%;
+    height: 140vh;
+    background-image: url(images/qop_concept_bg2.jpg);
+    background-repeat: no-repeat;
+    background-color: black;
+    z-index: 40;
+}
+
+.containerlore-1{
+    padding-top: 80px;
+    text-align: center;
+}
+
+.loretext-4{
+    font-size: 18px;
+    color: white;
+    line-height: 32px;
+    text-shadow: 2px 2px 2px rgb(29, 28, 28);
+    font-weight: lighter;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.container-lore img{
+    max-width: 80%;
+}
+
+
+
+
+footer{
+    width: 100%;
+    height: 80px;
+    background-color: black;
+}
+
+.footercontent{
+    height: 100%;
+    width: 90rem;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: flex-end;
+    inline-size: max-content;
+
+}
+
+
+.footercontent img{
+    object-fit: contain;
+    margin: 0;
+    width: 45%;
+    height: 45%;
+    margin-right: 20px;
+}
+
+
+
+
+
+
+
