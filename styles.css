@@ -30,7 +30,7 @@ header{
     width: 100%;
     font-family: 'Radiance';
     height: 65px;
-    background-color: rgb(48, 46, 46);
+    background-color: rgb(29, 30, 32);
     box-shadow: 0px 2px 10px #000000;
     width: 100%;
     position: fixed;
@@ -106,7 +106,7 @@ header{
 
 .videoconfig{
     width: 100%;
-    height: 100%;
+    height: 95%;
     display: flex;
     justify-content: center;
     position: relative;
@@ -142,7 +142,7 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items:center;
-    top: 560px;
+    top: 32em;
     cursor: pointer;
 }
 
@@ -601,7 +601,6 @@ footer{
     header{
         font-family: 'Radiance';
         height: 65px;
-        background-color: rgb(48, 46, 46);
         box-shadow: 0px 2px 10px #000000;
         width: 100%;
         z-index: 40;
@@ -657,9 +656,6 @@ footer{
 }
 
 @media screen and (max-width: 992px){
-    .playvideo{
-        top: 500px;
-    }
     .arcanetittle{
         width: 80%;
         height: 80%;
@@ -670,6 +666,10 @@ footer{
     }
     .containertext-3{
         margin-top: 80px;
+    }
+
+    .attackvideo{
+        width: 100%;
     }
 
     .fixloopvideo video{
@@ -687,7 +687,7 @@ footer{
 
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 900px){
     .header-content span{
         display: none;
     }
@@ -702,6 +702,11 @@ footer{
         display: inline-flex;
         margin-left: 20px;
     }
+
+}
+
+@media screen and (max-width: 768px){
+    
     .container-data{
         width: 100%;
     }
@@ -713,6 +718,10 @@ footer{
 
     .attackimage{
         width: 90%;
+    }
+
+    .attackstyle{
+        left: -26.5%;
     }
 
     .container-attacks{
@@ -733,6 +742,9 @@ footer{
 @media screen and (max-width: 576px){
     .siderocks{
         display: none;
+    }
+    .firstdata{
+        font-size: 23px;
     }
     .containertext{
         width: 90%;
