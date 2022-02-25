@@ -762,9 +762,54 @@ footer{
         width: 90%;
         margin: 45% 0% 7% 5%;
     }
-
     .container-lore{
         height: 1250px;
     }
+    .container-arcanecontent2{
+        display: flex;
+        flex-direction:column;
+    }
+    
+    .fixloopvideo{
+        position: absolute;
+        width: 115%;
+        display: block;
+    }
+
+    .fixloopvideo video{
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    .container-info {
+        padding: 70% 10px 0px 0px;
+    }
+
+}
+
+@media screen and (max-width: 451px){
+.container-data img{
+    padding-bottom: 10px;
+}
+
+.firstdata{
+    margin-bottom: 5px;
+}
+
+.battlepass-options{
+    margin: 0px 0px 2px 0px;
+}
+
+.attackvideo{
+    width: 110%;
+}
+
+.attackimage{
+    width: 100%;
+}
+
+.attackstyle{
+    left: -64.5%;
+}
 
 }
