@@ -744,6 +744,9 @@ footer{
 }
 
 @media screen and (max-width: 576px){
+    .playvideo{
+        top: 30em;
+    }
     .siderocks{
         display: none;
     }
