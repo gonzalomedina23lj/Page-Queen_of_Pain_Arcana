@@ -207,8 +207,8 @@ header{
 }
 
 .container-data{
-    width: 780px;
-    height: 190px;
+    width: 820px;
+    
     position: relative;
     z-index: 8;
     display: flex;
@@ -256,6 +256,8 @@ header{
 }
 
 .buyoptions{
+    width: 400px;
+    height: 55px;
     cursor: pointer;
     border-width: 0.5px;
     border-style: solid;
@@ -263,9 +265,14 @@ header{
     border-radius: 4px;
     padding: 14px 40px;
     box-shadow: 2px 2px 2px rgb(29, 28, 28);
-    background-image: linear-gradient(to top, #e2ce5b 0%, #ffaa2a 100%);
+    background-image: linear-gradient(to top, #e2ce5b 0%, #f89c12 100%);
     text-shadow: 1px 1px 2px black;
     text-align: center;
+}
+
+.buyoptions:hover{
+    background-image: linear-gradient(to top, #e2ce5b 0%, #ff6600 100%);
+    transition: 0.6s;
 }
 
 .container-attacks{
@@ -739,6 +746,19 @@ footer{
 
     .container-lore{
         height: 1350px;
+    }
+
+    .container-battlepass{
+        height: 300px;
+    }
+
+    .battlepass-options{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .buyoptions{
+        margin-top: 15px;
     }
 
 }
