@@ -37,7 +37,10 @@
 
     <main>
         <section class="container-avance">
-            <div class="videoconfig">
+            <div class="container-video" id="containervideo">
+                <iframe src="https://www.youtube.com/embed/g3yrQ-0w4aI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="videoconfig" id="videoconfig">
                 <video
                 src="videos/qop_web_header_webm.webm" class="qopvideo" autoplay muted loop preload="auto";  
                 src="videos/qop_web_header_mp4.mp4" class="qopvideo" autoplay muted loop preload="auto">
@@ -45,8 +48,8 @@
             </div>
             <div class="videoandtittle">
                 <img src="images/qop_logo.png" alt="" class="arcanetittle">  
-                <div class="playvideo">
-                    <img src="images/playbtn-hover.png" alt="" class="playbutton">
+                <div class="playvideo" id="playvideo">
+                    <img src="images/playbtn-hover.png" alt="" class="playbutton" id="playbutton">
                     <span>REPRODUCIR AVANCE</span>
                 </div>     
             </div>
@@ -81,7 +84,6 @@
                 <p class="loretext">Satisfecha tras explorar largamente el patio de recreo que es para ella el reino mortal, Akasha regresa ahora a la peligrosa Corte de Ristul, donde ha perdido protagonismo durante su ausencia. Pero la reina de la superficie pretende reclamar también el trono del inframundo. Mediante un trato con un príncipe demonio exiliado, Akasha ha conseguido una nueva dimensión de poder, y sus diabólicos planes están por fin a punto de comenzar.</p>   
             </div>
             <div class="containervideo">
-                <!-- <img src="images/vid_frame.png" alt="" class="videoframe"> -->
                 <video autoplay preload="auto" loop
                     src="videos/qop_arcana23432.mp4" class="attackvideo" autoplay muted loop preload="auto"; 
                     src="videos/qop_arcana23432.webm" class="attackvideo" autoplay muted loop preload="auto">
@@ -186,6 +188,7 @@
             <img src="images/dota_logo.png" alt="">
         </div>
     </footer>
+<script src="main.js"></script>
     
 </body>
 </html>
