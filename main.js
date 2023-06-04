@@ -18,3 +18,6 @@ function hideVideo(){
     
 };
 
+window.addEventListener("scroll", () => { 
+    hideVideo();
+});
