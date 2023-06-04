@@ -1,9 +1,20 @@
-const videoPlay = document.getElementById('playvideo');
-document.getElementById('containervideo').style.display="none";
+const YTBPlayerEmbed = document.querySelector(".ytb-video-embed");
+const YTBPlayVideo = document.querySelector(".ytb-video-play");
+const videoFrame = document.getElementById("qop-video-embed")
 
+function playVideo(){
+    videoFrame.src 
 
-videoPlay.addEventListener("click", (e) => {
-    document.getElementById('containervideo').style.display="block";
-    document.getElementById('videoconfig').style.display="none";
+}
 
-})
+YTBPlayVideo.addEventListener ('click', () => {
+        YTBPlayerEmbed.classList.add("active");
+        playVideo()
+    } );
+
+function hideVideo(){
+    YTBPlayerEmbed.classList.remove("active");
+    document.getElementById('qop-video-embed').src = document.getElementById('qop-video-embed').src;
+    
+};
+

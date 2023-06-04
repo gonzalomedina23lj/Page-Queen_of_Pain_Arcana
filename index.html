@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&amp;display=swap" rel="stylesheet">
-
 </head>
 <body>
     <header>
@@ -30,25 +29,23 @@
                     <a href="https://store.steampowered.com/app/570/Dota_2/"  style="color:rgb(61, 117, 172);font-weight: bold;"target="none">PLAY FOR FREE</a>
                 </div>
             </div>
-
         </div>
-
     </header>
 
     <main>
         <section class="container-avance">
-            <div class="container-video" id="containervideo">
-                <iframe src="https://www.youtube.com/embed/g3yrQ-0w4aI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
             <div class="videoconfig" id="videoconfig">
                 <video
                 src="videos/qop_web_header_webm.webm" class="qopvideo" autoplay muted loop preload="auto";  
                 src="videos/qop_web_header_mp4.mp4" class="qopvideo" autoplay muted loop preload="auto">
                 </video>              
             </div>
+            <div class="ytb-video-embed">
+                <iframe class="ytb-video-frame" id="qop-video-embed" width="560" height="315" onmouseleave="hideVideo()" src="https://www.youtube.com/embed/g3yrQ-0w4aI?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen muted></iframe>
+            </div>
             <div class="videoandtittle">
-                <img src="images/qop_logo.png" alt="" class="arcanetittle">  
-                <div class="playvideo" id="playvideo">
+                <img src="images/qop_logo.png" alt="" class="arcanetittle">
+                <div class="ytb-video-play" id="ytb-video-play">
                     <img src="images/playbtn-hover.png" alt="" class="playbutton" id="playbutton">
                     <span>REPRODUCIR AVANCE</span>
                 </div>     
@@ -132,7 +129,7 @@
                     <div class="arcaneinfo">
                         <h9 class="subtitulo-3">Más de 500 líneas de voz exclusivas</h9>
                         <div class="playarcanecontent">
-                            <p class="loretext-3"><img src="images/play-icn-active.png" align="left" alt="">Haz clic para reproducir</p>
+                            <p class="loretext-3"><img src="images/play-icn-active.png" alt="lore-text">Haz clic para reproducir</p>
                         </div>
                     </div>
                     <div class="arcaneinfo">

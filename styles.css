@@ -106,9 +106,11 @@ header{
     background-color: black;
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 .container-video{
+    margin-top: 15px;
     width: 100%;
     height: 100%;
     display: flex;
@@ -118,9 +120,8 @@ header{
 }
 
 .container-video iframe {
-   
-    width: 85%;
-    height: 85%;
+    width: 100%;
+    height: 95%;
 }
 
 .videoconfig{
@@ -131,6 +132,41 @@ header{
     position: relative;
     overflow: hidden;
     
+}
+
+.ytb-video-embed{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-width: 160vw;
+    z-index: 9999;
+    margin: auto;
+    pointer-events: none;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: black;
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#qop-video-embed{
+    position: absolute;
+    max-width: 80vw;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+    
+
 }
 
 .qopvideo{
@@ -155,7 +191,7 @@ header{
 }
 
 
-.playvideo{
+.ytb-video-play{
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -165,13 +201,13 @@ header{
     cursor: pointer;
 }
 
-.playvideo span{
+.ytb-video-play span{
     color: grey;
     letter-spacing: 6px;
     text-shadow: 1px 1px 5px #000000;
 }
 
-.playvideo:hover{
+.ytb-video-play:hover{
     z-index: 1;
     transform: scale(1.3);
     transition: all ease .2s;
@@ -822,6 +858,7 @@ footer{
 
     .container-info {
         padding: 70% 10px 0px 0px;
+        margin-left: 15px;
     }
 
 }
